@@ -43,7 +43,7 @@ public class test2 {
         CsvReader creader = new CsvReader(reader, ',');
         driver.get(baseUrl + "/");
         String w1=driver.getWindowHandle();
-       
+       //
         while(creader.readRecord()){
             inString = creader.getRawRecord();//读取一行数据
                 String[] info=inString.split(",");
